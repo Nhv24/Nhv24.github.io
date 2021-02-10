@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /**  Links  **/
@@ -14,11 +16,25 @@ a:hover {
 }
 
 nav {
-    height: 40px;
-    line-height: 39px;
+    position: fixed;
+    height: 60px;
+    line-height: 59px;
     background-color: lightgray;
-    color: black;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    right: 0;
+    overflow: hidden;
+    display: block;
+    box-shadow: 2px 2px 5px lightgray;
 }
 nav a:hover {
     text-decoration: none;
+}
+nav a {
+    color: black !important;
+    float: left;
+    text-align: center;
+    padding-left: 10px;
 }
