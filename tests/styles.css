@@ -26,13 +26,12 @@ nav {
     width: 100%;
     overflow: hidden;
     display: block;
-    box-shadow: 2px 2px 5px lightgray;
 }
 nav a:hover {
     text-decoration: none;
 }
 nav a {
-    color: black !important;
+    color: navyblue !important;
     float: left;
     text-align: center;
     padding-left: 20px;
