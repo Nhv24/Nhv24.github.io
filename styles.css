@@ -5,3 +5,8 @@ body {
 nav {
     height: 3vh;
 }
+
+/**  Links  **/
+a:link, a:hover, a:visited, a:active {
+    color: #0000EE;
+}
