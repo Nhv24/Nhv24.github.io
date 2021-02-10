@@ -26,6 +26,7 @@ nav {
     width: 100%;
     overflow: hidden;
     display: block;
+    display: none;
 }
 nav a:hover {
     text-decoration: none;
