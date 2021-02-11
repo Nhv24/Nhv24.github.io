@@ -19,21 +19,21 @@ nav {
     position: fixed;
     height: 60px;
     line-height: 59px;
-    background-color: whitesmoke;
+    background-color: black;
     margin: 0;
     padding: 0;
     top: 0;
     width: 100%;
     overflow: hidden;
     display: block;
-    box-shadow: 2px 2px 5px lightgray;
+    box-shadow: 2px 2px 5px darkblue;
     z-index: 3;
 }
 nav a:hover {
     text-decoration: none;
 }
 nav a {
-    color: black !important;
+    color: white !important;
     float: left;
     text-align: center;
     padding-left: 20px;
