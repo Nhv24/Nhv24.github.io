@@ -40,7 +40,7 @@ nav a {
 }
 
 header {
-    /*position: fixed;*/
+    position: fixed;
     height: 100vh;
     text-align: center;
     overflow: hidden;
