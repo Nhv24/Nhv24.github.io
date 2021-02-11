@@ -27,6 +27,7 @@ nav {
     overflow: hidden;
     display: block;
     box-shadow: 2px 2px 5px lightgray;
+    z-index: 3;
 }
 nav a:hover {
     text-decoration: none;
