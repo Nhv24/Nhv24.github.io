@@ -27,6 +27,8 @@ nav {
     box-shadow: 2px 2px 5px darkblue;
     z-index: 3;
     top: 0;
+    left: 0;
+    border-bottom: 1px solid #0e1525;
 }
 nav a:hover {
     text-decoration: none;
