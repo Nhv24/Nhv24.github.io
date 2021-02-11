@@ -27,22 +27,31 @@ nav {
     padding: 0;
     width: 100%;
     overflow: hidden;
-    display: block;
     z-index: 3;
     top: 0;
     left: 0;
     border-bottom: 1px solid #0e1525;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 nav a:hover {
     text-decoration: none;
 }
 nav a {
+    font-weight: 500;
     color: white !important;
     text-align: center;
-    line-height: 59px;
-    display: block;
+    display: inline-block;
     white-space: nowrap;
-    text-align: left;
+    font-size: large;
+    padding: 0 20px;
+    transition: .3s;
+}
+nav img {
+    max-height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
 }
 
 header {
