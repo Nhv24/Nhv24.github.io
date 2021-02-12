@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -14,44 +14,6 @@ a:link, a:hover, a:visited, a:active {
 }
 a:link {
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-nav {
-    position: fixed;
-    height: 60px;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #0e1525;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-nav a:hover {
-    text-decoration: none;
-}
-nav a {
-    font-weight: 500;
-    color: white !important;
-    text-align: center;
-    display: inline-block;
-    white-space: nowrap;
-    font-size: large;
-    padding: 0 20px;
-    transition: .3s;
-}
-nav img {
-    max-height: 50px;
-    margin-left: 20px;
-    border-radius: 50%;
 }
 
 header {
@@ -94,4 +56,66 @@ footer p {
 }
 footer a:hover {
     text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container > .flex-item {
+    flex: 1;
+}
+
+.flex-item {
+    padding: 20px 15px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    transition: .2s;
+    cursor: pointer;
+    color: black;
+}
+.flex-item:hover {
+    box-shadow: 2px 2px 6px lightgray;
+}
+
+nav {
+    position: fixed;
+    height: 60px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #0e1525;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav a {
+    font-weight: 500;
+    color: white !important;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: large;
+    padding: 0 20px;
+    transition: .3s;
+}
+nav img {
+    max-height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
 }
