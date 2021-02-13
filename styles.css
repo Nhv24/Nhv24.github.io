@@ -85,37 +85,49 @@ footer a:hover {
     box-shadow: 2px 2px 6px lightgray;
 }
 
-nav {
+#navigation, #left-nav, #right-nav {
     position: fixed;
     height: 60px;
     background-color: black;
     margin: 0;
     padding: 0;
-    width: 100%;
     overflow: hidden;
     z-index: 3;
     top: 0;
-    left: 0;
     border-bottom: 1px solid #0e1525;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
-nav a:hover {
-    text-decoration: none;
+#navigation {
+    justify-content: space-between;
+    width: 100%;
 }
-nav a {
+#navigation a {
     font-weight: 500;
     color: white !important;
-    text-align: center;
     display: inline-block;
     white-space: nowrap;
     font-size: large;
     padding: 0 20px;
-    transition: .3s;
 }
-nav img {
+
+#left-nav {
+    left: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+#right-nav {
+    right: 0;
+    margin-right: 10px;
+    text-align: right;
+}
+#navigation a:hover {
+    text-decoration: none;
+}
+.rounded-img {
+    border-radius: 50%;
+}
+.avatar {
     max-height: 50px;
     margin-left: 20px;
-    border-radius: 50%;
 }
