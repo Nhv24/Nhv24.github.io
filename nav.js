@@ -1,5 +1,5 @@
 window.onscroll = () => {
-    if (window.scrollY === 0)
+    if (window.scrollY <= 0)
     {
         document.querySelector('#navigation').style.boxShadow = 'none';
     }
