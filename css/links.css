@@ -1,0 +1,7 @@
+/**  Links  **/
+a:link, a:hover, a:visited, a:active {
+    color: #0000EE;
+}
+a:link {
+    text-decoration: none;
+}
