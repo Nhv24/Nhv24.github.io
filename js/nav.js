@@ -12,7 +12,7 @@ window.onscroll = () => {
         // If n is less than some number
         if (n < 20)
         {
-            document.querySelector('#navigation').style.boxShadow = `3px 3px ${n}px #2f4f4f`;
+            document.querySelector('#navigation').style.boxShadow = `0px 5px ${n}px #2f4f4f`;
             // Increment
             n++;
         }
