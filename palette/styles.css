@@ -29,15 +29,15 @@ button:hover {
 }
 
 #container {
+    height: 45%;
+    width: 99%;
     position: absolute;
-    height: 100%;
-    width: 100%;
     margin: 0 auto;
-    padding: 0;
 }
 
 .clr {
     display: inline-block;
-    width: 19.6%;
+    width: 19.7%;
     height: 100%;
+    cursor: pointer;
 }
