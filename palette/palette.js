@@ -1,11 +1,20 @@
+// Generate on document load
+document.addEventListener("DOMContentLoaded", generate)
+
 colors = [];
 
 function generate() {
+    clrDivs = document.querySelectorAll('.clr');
     // Change the colors
-    document.querySelectorAll('.clr').forEach(div => {
+    clrDivs.forEach((div, index) => {
         let clr = '#' + Math.random().toString(16).substr(-6);
         div.style.backgroundColor = clr;
-        colors.push(clr);
+        if (colors.length < clrDivs.length) {
+            colors.push(clr);
+        }
+        else {
+            colors[index] = clr;
+        }
     });
 }
 
