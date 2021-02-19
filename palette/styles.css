@@ -9,12 +9,12 @@ h1 {
 }
 
 button {
-    border-radius: 2px;
-    max-height: 200px;
+    border-radius: 5px;
+    max-height: 900px;
     min-height: 50px;
-    max-width: 400px;
+    max-width: 1000px;
     min-width: 80px;
-    padding: 10px;
+    padding: 20px 30px;
     background-color: #00a;
     border: 1px solid #00a;
     color: white;
@@ -22,6 +22,7 @@ button {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    font-size: xx-large;
     margin-bottom: 20px;
 }
 button:hover {
