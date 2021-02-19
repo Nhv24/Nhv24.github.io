@@ -33,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("/images/index-bg.jpg");
+    background: url("../images/index-bg.jpg");
     background-size: cover;
 }
 header:after {
@@ -47,7 +47,7 @@ header:after {
     position: absolute;
     
     animation-name: fadeout;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
