@@ -1,5 +1,5 @@
 // Generate on document load
-document.addEventListener("DOMContentLoaded", generate)
+document.addEventListener("DOMContentLoaded", generate);
 
 colors = [];
 
