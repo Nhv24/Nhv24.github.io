@@ -1,7 +1,20 @@
 // Generate on document load
 document.addEventListener("DOMContentLoaded", generate);
 
+function pastelColors(){
+    const r = (Math.round(Math.random()* 127) + 127).toString(16);
+    const g = (Math.round(Math.random()* 127) + 127).toString(16);
+    const b = (Math.round(Math.random()* 127) + 127).toString(16);
+    return '#' + r + g + b;
+}
+
+
 colors = [];
+
+// Returns mixed hex representation of color
+function mix(r, b, g, r2, g2, b2) {
+    return '#' + Math.floor((r + r2) / 2).toString(16) + Math.floor((g + g2) / 2).toString(16) + Math.floor((b + b2) / 2).toString(16);
+}
 
 // Function to tell if color is too dark
 
@@ -25,11 +38,27 @@ function changecolor(color, div) {
     p.innerHTML = color;
 }
 
-function generate() {
+// Function to generate random number less than 256
+function getrand() {
+    return Math.floor(Math.random() * 256);
+}
+
+function generate(str) {
     clrDivs = document.querySelectorAll('.clr');
+
+    // Randomly generate 1st color
+    const r = getrand();
+    const g = getrand();
+    const b = getrand();
+
     // Change the colors
     clrDivs.forEach((div, index) => {
-        let clr = '#' + Math.random().toString(16).substr(-6);
+        if (str === "mix") {
+            clr = mix(r, b, g, getrand(), getrand(), getrand());
+        }
+        else {
+            clr = pastelColors();
+        }
         div.style.backgroundColor = clr;
         if (colors.length < clrDivs.length) {
             colors.push(clr);
