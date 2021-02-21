@@ -9,6 +9,12 @@ h1 {
     margin: 20px;
 }
 
+
+#btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 button {
     border-radius: 5px;
     max-height: 900px;
@@ -21,8 +27,7 @@ button {
     color: white;
     transition: background-color .2s;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     font-size: xx-large;
     margin-bottom: 20px;
 }
