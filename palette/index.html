@@ -11,9 +11,15 @@
         <h1>
             Click the button
         </h1>
-        <button onclick="generate()">
-            Click
-        </button>
+        <div id="btns-container">
+            <button onclick="generate('pastel')" title="Generates pastel colors">
+                Pastel
+            </button>
+            <button onclick="generate('mix')" title="Mixes random colors with a constant color">
+                Mix
+            </button>
+        </div>
+
         <!-- Minizied HTML (inline-block elements) -->
         <div id="container">
             <div class="clr" onclick="copy(0)" title="Copy">
