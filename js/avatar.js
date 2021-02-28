@@ -1,11 +1,8 @@
 function randomimg(max = 5) {
-    var imgnum = Math.floor(Math.random() * max);
+    let imgs = ["images/avatar0.jpg", "images/avatar1.png", "images/avatar2.png", "images/avatar3.png", "images/avatar4.png"];
+    let img = imgs[Math.floor(Math.random() * imgs.length)];
 
-    // Find the correct extension
-    if (imgnum === 0) {
-        return `avatar${imgnum}.jpg`;
-    }
-    else {
-        return `avatar${imgnum}.png`;
-    }
+    document.querySelector('.rounded-img.avatar').src = img;
 }
+
+document.addEventListener("DOMContentLoaded", randomimg);
