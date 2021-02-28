@@ -1,4 +1,4 @@
-function randomgimg(max = 5) {
+function randomimg(max = 5) {
     var imgnum = Math.floor(Math.random() * max);
 
     // Find the correct extension
