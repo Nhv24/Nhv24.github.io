@@ -21,10 +21,9 @@
             <main id="content">
                 More content to be added later!!
                 <div class="container">
-                    { insert flex-item.html }
-                    { insert flex-item.html }
-                    { insert flex-item.html }
-                    { insert flex-item.html }
+                    { for n in range(4) }
+                        { insert flex-item.html }
+                    { endfor }
                 </div>
             </main>
         </div>
