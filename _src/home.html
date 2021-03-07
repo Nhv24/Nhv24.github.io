@@ -13,7 +13,11 @@
         <title>My WIP site</title>
     </head>
     <body>
-        { insert navbar.html }
+        {% comment %}
+            This file uses a modified Liquid syntax
+        {% endcomment %}
+        
+        {% insert navbar.html %}
         <div id="wrapper" style="margin-top: 60px;">
             <header>
                 <h1>Hello</h1>
@@ -21,9 +25,9 @@
             <main id="content">
                 More content to be added later!!
                 <div class="container">
-                    { for n in range(4) }
-                        { insert flex-item.html }
-                    { endfor }
+                    {% for n in (0..3) %}
+                        {% insert flex-item.html %}
+                    {% endfor %}
                 </div>
             </main>
         </div>
