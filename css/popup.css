@@ -1,3 +1,9 @@
+/* Remove outline on buttons */
+button,
+input {
+    outline: none;
+}
+
 body {
     margin: 0;
 }
