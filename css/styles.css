@@ -21,6 +21,12 @@ body {
     padding: 0;
 }
 
+/* Remove outline on buttons */
+button,
+input {
+    outline: none;
+}
+
 header {
     height: 100vh;
     text-align: center;
