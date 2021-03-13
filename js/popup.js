@@ -25,9 +25,11 @@ function conf(text) {
     $(".confirm-modal p").text(text);
 
     $(".confirm-modal #cancel").click(() => {
+        $(".screen-mask").hide();
         return false;
     });
     $(".confirm-modal #ok").click(() => {
+        $(".screen-mask").hide();
         return true;
     });
 }
