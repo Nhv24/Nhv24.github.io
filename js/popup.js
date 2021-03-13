@@ -1,5 +1,5 @@
 function popup(text) {
-	const screen_mask = $(".screen-mask");
+    const screen_mask = $(".screen-mask");
     // Set body to overflow: hidden
     $("body").css("overflow", "hidden");
 
