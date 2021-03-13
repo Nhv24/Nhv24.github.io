@@ -1,7 +1,3 @@
-function setup() {
-
-}
-
 function popup(text) {
     // Set body to overflow: hidden
     $("body").css("overflow", "hidden");
