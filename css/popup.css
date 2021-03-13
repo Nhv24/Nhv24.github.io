@@ -17,7 +17,7 @@ body {
     z-index: 5;
 }
 
-.popup-modal {
+.popup-modal, .confirm-modal {
     display: block;
     position: fixed;
     top: 50%;
@@ -32,11 +32,11 @@ body {
     min-width: 10%;
 }
 
-.popup-modal p {
+.popup-modal p, .confirm-modal p {
     color: black;
 }
 
-.popup-modal button {
+.popup-modal button, .confirm-modal button {
     font-weight: bolder;
     background-color: rgb(27, 54, 93);
     color: white;
@@ -48,7 +48,7 @@ body {
     padding: 0 5px;
     float: right;
 }
-.popup-modal button:hover {
+.popup-modal button:hover, .confirm-modal button:hover {
     transition: 0s ease;
     background-color: #0b5b7c;
 }
