@@ -1,7 +1,4 @@
 function popup(text) {
-    // Set body to overflow: hidden
-    $("body").css("overflow", "hidden");
-
     // Show the popup/alert using the popup's parent element
     $(".popup-modal").parent().show();
 
@@ -15,9 +12,6 @@ function popup(text) {
 }
 
 function conf(text) {
-    // Set body to overflow: hidden
-    $("body").css("overflow", "hidden");
-
     // Show the popup/alert using the popup's parent element
     $(".confirm-modal").parent().show();
 
@@ -26,10 +20,8 @@ function conf(text) {
 
     $(".confirm-modal #cancel").click(() => {
         $(".screen-mask").hide();
-        return false;
     });
     $(".confirm-modal #ok").click(() => {
         $(".screen-mask").hide();
-        return true;
     });
 }
