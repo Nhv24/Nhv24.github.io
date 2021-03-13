@@ -1,21 +1,16 @@
 function popup(text) {
-    const mask = $(".screen-mask");
-    const modal = $('.popup-modal');
-    const modal_p = $(".popup-modal p");
-    const btn = $(".popup-modal button");
-
-
+	const screen_mask = $(".screen-mask");
     // Set body to overflow: hidden
     $("body").css("overflow", "hidden");
 
     // Show the popup/alert
-    mask.show();
+    screen_mask.show();
 
     // Change the text
-    modal_p.text(text);
+	$(".popup-modal p").text(text);
 
     // Close the modal when the button is clicked
-    btn.click(() => {
-        mask.hide();
+    $(".popup-modal button").click(() => {
+        screen_mask.hide();
     });
 }
