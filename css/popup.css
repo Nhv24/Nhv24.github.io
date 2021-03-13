@@ -43,6 +43,8 @@ body {
     transition: 0.5s ease;
     cursor: pointer;
     border: none;
+    height: 24px;
+    font-size: 14px;
 }
 .popup-modal button:hover {
     transition: 0s ease;
