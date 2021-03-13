@@ -1,13 +1,14 @@
 function setup() {
+
+}
+
+function popup(text) {
     // Set body to overflow: hidden
     $("body").css("overflow", "hidden");
 
     // Show the popup/alert using the popup's parent element
-    $(".popup").parent().show();
-}
+    $(".popup-modal").parent().show();
 
-function popup(text) {
-    setup();
     // Change the text
     $(".popup-modal p").text(text);
 
@@ -18,12 +19,19 @@ function popup(text) {
 }
 
 function conf(text) {
-    setup();
+    // Set body to overflow: hidden
+    $("body").css("overflow", "hidden");
+
+    // Show the popup/alert using the popup's parent element
+    $(".confirm-modal").parent().show();
 
     // Change the text
-    $(".confirm-modal").text(text);
+    $(".confirm-modal p").text(text);
 
     $(".confirm-modal #cancel").click(() => {
         return false;
+    });
+    $(".confirm-modal #ok").click(() => {
+        return true;
     });
 }
