@@ -45,8 +45,10 @@ body {
     border: none;
     height: 24px;
     font-size: 14px;
+    display: flex;
 }
 .popup-modal button:hover {
     transition: 0s ease;
+    flex-grow: 1;
     background-color: #0b5b7c;
 }
