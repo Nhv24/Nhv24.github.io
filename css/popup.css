@@ -18,7 +18,7 @@ body {
 }
 
 .popup-modal {
-    display: flex;
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -46,7 +46,7 @@ body {
     height: 24px;
     font-size: 14px;
     
-    flex-grow: 1;
+    float: right;
 }
 .popup-modal button:hover {
     transition: 0s ease;
