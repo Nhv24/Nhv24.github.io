@@ -6,6 +6,15 @@ input {
 
 body {
     margin: 0;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 6px;
+    margin: 5px;
 }
 
 .screen-mask {
