@@ -15,6 +15,7 @@ button {
     border-radius: 3px;
     padding: 4px 6px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .screen-mask {
